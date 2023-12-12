@@ -1,0 +1,112 @@
+
+#title {
+    font-family: "Georgia";
+    font-style: italic;
+    font-size: 48px; /* Adjust font size as needed */
+    background-image: linear-gradient(to right, #ff8d58, #000000); /* Define your gradient colors */
+    -webkit-background-clip: text; /* Apply the gradient to the text */
+    color: transparent; /* Make the text transparent */
+  }
+
+#description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Roboto', Tahoma;
+    margin: 0;
+    background-image: url("livingroom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 242, 216, 0.575);
+    z-index: -1;    
+}
+
+h1, p {
+    text-align: center;
+    margin: 2em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+form {
+    background-color: rgba(255, 226, 192, 0.884);
+    width: 60vw; /*vw stands for viewport width, the form will occupy 60% of the viewport width*/
+    max-width: 500px; 
+    min-width: 300px;
+    margin: 0 auto; /* this will center the form horizontally within its parent container. 0 sets top/bottom while auto horizontally centers the form by distributing the remaining space equally on the left and right sides*/
+    padding-bottom: 2em;
+    margin-top: 25px; /*this adds space from the form and h1,p*/
+}
+
+
+
+fieldset {
+    border: none;
+    padding: 1.5rem 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+}
+
+.custom-select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333; /* Text color */
+    padding: 8px; /* Adjust padding */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Border radius */
+    background-color: #ffffff; /* Background color */
+
+}
+
+.custom-select option {
+    background-color: rgb(255, 255, 255);
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: rgb(65, 65, 65);
+    font-family: "Roboto", Tahoma;
+    font-style: italic;
+}
+
+.center-submit {
+    display: block;
+    margin: 0 auto; /* Center the submit button horizontally */
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 id="title">CoziiHousing Feedback Form</h1>
+    <p id="description">We value your feedback! Help us improve by sharing your thoughts, suggestions and experiences.</p>
+    <section></section>
+
+    <form id="survey-form">
+    <!--First part of the form-->
+        <fieldset>
+            <label for="name">Name</label><input id="name" type="text" name="name" placeholder="Enter your name" required>
+            <label for="email">Email</label><input id="email" type="email" name="email" placeholder="Enter your Email" required>
+            <label for="age">Age <small>(optional)</small></label><input id="age" type="number" name="age" min="13" max="120" placeholder="Age" required>
+        </fieldset>
+    <!--Now we create options and what not
+    maybe delete the fieldsets so that we 
+    wont have borders within the form-->
+        <fieldset>
+            <label for="role">Which option best describes your current role?</label>
+            <select id="role" name="role" class="custom-select">
+                <option value="">Select current role</option>
+                <option value="1">Tenant</option>
+                <option value="2">Investor</option>
+                <option value="3">Appraiser</option>
+                <option value="4">Other</option>
+            </select>
+        
+        </fieldset>
+    <!--Recommendation for a friend-->
+        <fieldset>
+            <div>Would you recommend this company to a friend?</div>
+            <label for="def" class="radio"><input type="radio" name="recommendation" id="def" checked>Definitely</label>
+            <label for="maybe" class="radio"><input type="radio" name="recommendation" id="maybe">Maybe</label>
+            <label for="unsure" class="radio"><input type="radio" name="recommendation" id="unsure">Not Sure</label>
+        </fieldset>
+    <!--Add a favorite feature option-->
+        <fieldset>
+            <label for="role">What is your favorite feature of CoziiHousing?</label>
+            <select id="role" name="role" class="custom-select">
+                <option value="">(select one)</option>
+                <option value="1">Property Listing</option>
+                <option value="2">Search Filters</option>
+                <option value="3">Map Integration</option>
+                <option value="4">Property Details</option>
+            </select>
+            </label>
+        </fieldset>
+    <!--Improvements checkbox-->
+        <fieldset>
+            <div>What would you like to see improved? <small>(Check all that apply)</small></div>
+            <label for="option1"><input type="checkbox" name="option" id="option1"> Overall Website</label>
+            <label for="option2"><input type="checkbox" name="option" id="option2"> Communication</label>
+            <label for="option3"><input type="checkbox" name="option" id="option3"> Search Results</label>
+            <label for="option4"><input type="checkbox" name="option" id="option4"> Listings</label>
+            <label for="option5"><input type="checkbox" name="option" id="option5"> None</label>
+        </fieldset>
+    <!--add text area for feedback-->
+        <fieldset>
+            <label for="feedback">Any comments or suggestions?</label>
+            <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" class="center-submit">
+    </form>
+
+</body>
+</html>
